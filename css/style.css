@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.main-content {
+  min-height: 1000px;
+  width: 90%;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: 300px 700px;
+}
+.left-section {
+  grid-column: span 1;
+  background-color: lightgray;
+  /* background: linear-gradient(180deg, rgb(161, 221, 223) ,rgb(7, 189, 196)); */
+}
+.right-section {
+  grid-column: span 1 / span 2;
+  background: linear-gradient(180deg, rgb(126, 196, 243), rgb(14, 151, 243));
+}
+.left-content {
+  padding: 1rem;
+}
+.profile-image {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border: 5px solid white;
+  border-radius: 30%;
+}
+.name {
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 0.02px;
+  padding: 0.8rem;
+}
+.designation {
+  font-size: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding-bottom: 0.5rem;
+}
+.description {
+  font-size: 0.75rem;
+  text-align: center;
+  padding: 1rem;
+  font-weight: bold;
+}
+.social-media {
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+.personal-details {
+  list-style: none;
+}
+.personal-details .icon {
+  margin: 20px;
+}
+.skills {
+  font-size: 0.75rem;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 1rem 0.5rem;
+  font-weight: bolder;
+}
+.skill-item {
+  margin: 20px auto;
+  padding-left: 20px;
+}
+.skill-name {
+  font-size: 0.65rem;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  text-transform: uppercase;
+}
+.progress-bar {
+  border: 1px solid white;
+  background-color: rgb(14, 151, 243);
+  height: 4px;
+}
+.right-main-content {
+  padding: 2rem 3rem;
+  text-align: justify;
+}
+.right-title {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: 700;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+.section {
+  margin-bottom: 30px;
+}
+.para {
+  padding: 0.5rem;
+}
+.education-details {
+  padding-top: 0.5rem;
+  display: flex;
+}
+.institution-details {
+  text-align: justify;
+  width: 70%;
+  margin-left: 1rem;
+}
+.institution {
+  width: 30%;
+  margin-right: 0.5rem;
+  margin-left: 2rem;
+  text-align: center;
+  font-weight: bold;
+}
+.right-content {
+  margin: 8px auto;
+}
+.right-content h4 {
+  margin-bottom: 10px;
+}
+.right-content .project-details {
+  padding-left: 10px;
+}
+.project-details span {
+  font-weight: normal;
+}
+.project-details h5 {
+  margin-bottom: 8px;
+}
+.project-details a {
+  text-decoration: none;
+}
+.left-right {
+  display: flex;
+}
+@media screen and (max-width: 673px) {
+  .main-content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
